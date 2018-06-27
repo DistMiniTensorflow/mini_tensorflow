@@ -1,3 +1,5 @@
-set(LIBS ${pslite_LINKER_LIBS} pslite)
-add_executable(dist_mini_tf main.cpp)
-target_link_libraries(dist_mini_tf ${LIBS})
+aux_source_directory(. DIR_LIB_SRCS)
+
+set(LIBS ${pslite_LINKER_LIBS} pslite zmq)
+add_executable(distlr ${DIR_LIB_SRCS})
+target_link_libraries(distlr ${LIBS})
