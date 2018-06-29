@@ -2,3 +2,11 @@ servers
 testps.o
 testps
 
+
+*.o
+distlr
+examples/data/test
+examples/data/train
+examples/data/models
+ps-lite/
+
